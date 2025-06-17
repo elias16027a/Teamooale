@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te Amo A+E</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="playlist-header">
+            <h1>2 MESES JUNTOS</h1>
+            <p>Por finnn, Feliz segundo mesecito mi amor </p>
+        </div>
+
+        <div class="main-player-section">
+            <div class="cover-art">
+                <img id="current-cover" src="https://via.placeholder.com/200x200?text=Playlist" alt="aca va una imagen jeje">
+            </div>
+            <div class="player-controls">
+                <h3 id="current-song-title">Te AM0</h3>
+                <p id="current-song-artist">Escoge la cancion del dia amor </p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar"></div>
+                </div>
+                <div class="controls-buttons">
+                    <i class="fas fa-backward-step"></i>
+                    <i class="fas fa-play" id="play-pause-btn"></i>
+                    <i class="fas fa-forward-step"></i>
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="song-list">
+            <div class="song-item" data-unlock-date="2025-06-16" data-song-src="song1.mp3" data-artist="Artista 1" data-cover="cover1.jpg">
+                <div class="song-info">
+                    <span class="song-title">Canción del lunes</span>
+                    <span class="song-artist"> Mi Princesa</span>
+                    <p class="romantic-phrase">"Hay muchos momentos hermosos en la vida pero sin duda el mejor de ellos, Fue cuando la conoci.</p>
+                </div>
+                <i class="fas fa-lock locked-icon"></i>
+            </div>
+
+            <div class="song-item" data-unlock-date="2025-06-16" data-song-src="Song2.mp3" data-artist="Artista 2" data-cover="cover2.jpg">
+                <div class="song-info">
+                    <span class="song-title">Canción del martes</span>
+                    <span class="song-artist">Sos la mejor</span>
+                    <p class="romantic-phrase">"Tu voz
+                    es la canción que mi corazón nunca se cansa de escuchar."</p>
+                </div>
+                <i class="fas fa-lock locked-icon"></i>
+            </div>
+
+            <div class="song-item" data-unlock-date="2025-06-18" data-song-src="song3.mp3" data-artist="Artista 3" data-cover="cover3.jpg">
+                <div class="song-info">
+                    <span class="song-title">Canción del miercoles</span>
+                    <span class="song-artist">Brillante</span>
+                    <p class="romantic-phrase">"Tengo 2 ojos para verte, 5 sentidos para sentirte, 7 días a la semana para pensarte y una vida para amarte.."</p>
+                </div>
+                <i class="fas fa-lock locked-icon"></i>
+            </div>
+
+            <div class="song-item" data-unlock-date="2025-06-19" data-song-src="song4.mp3" data-artist="Artista 4" data-cover="cover4.jpg">
+                <div class="song-info">
+                    <span class="song-title">Canción del jueves</span>
+                    <span class="song-artist">Hermosa</span>
+                    <p class="romantic-phrase">"Tenes unos ojos que parecen perlas brillantes."</p>
+                </div>
+                <i class="fas fa-lock locked-icon"></i>
+            </div>
+
+            <div class="song-item" data-unlock-date="2025-06-20" data-song-src="song5.mp3" data-artist="Artista 5" data-cover="cover5.jpg">
+                <div class="song-info">
+                    <span class="song-title">Canción del viernes </span>
+                    <span class="song-artist">Unica</span>
+                    <p class="romantic-phrase">"Contigo, cada día es una nueva historia de amor eterno."</p>
+                </div>
+                <i class="fas fa-lock locked-icon"></i>
+            </div>
+
+            <div class="song-item" data-unlock-date="2025-06-21" data-song-src="
+        song6.mp3" data-artist="Artista 6" data-cover="cover6.jpg">
+                <div class="song-info">
+                    <span class="song-title">FELIZ 2 MESES</span>
+                    <span class="song-artist">MI NIÑA </span>
+                    <p class="romantic-phrase">"No es que hayas llegado a llenar un vacio, sino que creaste un espacio inundado de luz"</p>
+                </div>
+                <i class="fas fa-lock locked-icon"></i>
+            </div>
+        </div>
+
+        <div class="hidden-phrase" style="display: none; text-align: center; margin-top: 30px; padding: 20px; background: linear-gradient(45deg, #e0f7fa, #c5cae9); border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+            <p style="font-size: 1.2em; color: #4a148c; font-style: italic;">
+                "Y al final de cada melodía, de cada día que pasa, mi corazón te elige una y otra vez, eternamente."
+            </p>
+        </div>
+
+    </div>
+
+    <audio id="audio-player"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

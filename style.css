@@ -1,0 +1,172 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0f0f0; /* Color de fondo similar al de la imagen */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente similar a la de la imagen */
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px; /* Ancho máximo para el contenedor principal */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.playlist-header {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.playlist-header h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.playlist-header p {
+    font-size: 1.1em;
+    color: #777;
+}
+
+.main-player-section {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #f0e6fa, #fce6f0); /* Gradiente suave */
+    border-radius: 10px;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.cover-art img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.player-controls {
+    flex-grow: 1;
+    color: #555;
+}
+
+.player-controls h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.player-controls p {
+    margin: 0 0 15px 0;
+    font-size: 1em;
+    color: #666;
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 3px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 0%; /* Se actualizará con JS */
+    height: 100%;
+    background: #9b59b6; /* Un tono de morado */
+    border-radius: 3px;
+}
+
+.controls-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-size: 1.5em;
+    color: #8e44ad; /* Tono más oscuro de morado */
+}
+
+.controls-buttons i {
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.controls-buttons i:hover {
+    color: #c07ecf;
+}
+
+.song-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.song-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: background 0.2s ease;
+}
+
+.song-item.unlocked {
+    cursor: pointer;
+}
+
+.song-item.unlocked:hover {
+    background: #f0e6fa; /* Un tono más claro al pasar el mouse */
+}
+
+.song-item.locked {
+    opacity: 0.6;
+    background-color: #eee;
+    cursor: not-allowed;
+}
+
+.song-info {
+    flex-grow: 1;
+}
+
+.song-title {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.song-artist {
+    color: #777;
+    font-size: 0.9em;
+    display: block;
+}
+
+.romantic-phrase {
+    font-style: italic;
+    color: #888;
+    font-size: 0.85em;
+    margin-top: 5px;
+}
+
+.locked-icon, .unlocked-icon {
+    font-size: 1.2em;
+    color: #aaa;
+}
+
+.unlocked-icon {
+    color: #8e44ad; /* Color para iconos desbloqueados, si quieres un color distinto */
+}
